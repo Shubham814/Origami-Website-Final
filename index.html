@@ -128,34 +128,7 @@
     <hr>
     <ul><p>Made with 💖 by Shubham.</p></ul>
 
-    <script>
-        function showNotification(){
-            const notification = new Notification("New Message from Shubham" , {
-                body: "Hello I am Shubham.",
-                icon: "https://image.flaticon.com/icons/png/512/25/25231.png    "
-            })
-            notification.onclick = (e) => {
-                window.location.href = ("https://github.com/Shubham814/Shubham814/blob/main/README.md")
-            }
-        }
-
-        console.log(Notification.permission);
-        if(Notification.permission === "granted"){
-            showNotification();
-        } else if(Notification.permission === "default"){
-            Notification.requestPermission().then(permision => {
-                if(permision === "granted"){
-                    showNotification();
-                }
-            });
-        } else if(Notification.permission === "denied"){
-            Notification.requestPermission().then(permision => {
-                if(permision === "granted"){
-                    showNotification();
-                }
-            });
-        }
-    </script> 
+   
 
 
     </body>
